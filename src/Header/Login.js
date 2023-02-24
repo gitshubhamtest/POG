@@ -1,9 +1,11 @@
 import "./Login.css"
 import {useState} from "react"
-import { Redirect } from "react-router-dom";
-import Home from "./Home";
+// import { Redirect } from "react-router-dom";
+// import Home from "./Home";
+import { Link} from "react-router-dom"
+// import SignUp from "./SignUp"
 
-const Login = () =>{
+ const Login =   () =>{
     const [login,setLogin]=useState({Uname:"",password:""})
     const [UN,setUN]=useState(false);
     const [PS,setPS]=useState(false);
@@ -24,9 +26,20 @@ const Login = () =>{
         alert("welcome to our page")
         
       }
+      // let data = {login}
+      // let result = await fetch("http://localhost:3000/Login",{
+      //   method:"POST",
+      //   headers:{
+      //     "Content-Type":"application/json",
+      //     "Accept":"application/json"
+      //   },
+      //   body: JSON.stringify(data)
+      // })
+      // result = await
+
     }
     return(
-        <>
+        
         <form onSubmit={handleSubmit}>
         <div className="mainFrame">
           <h1>Login Form</h1>
@@ -45,10 +58,13 @@ const Login = () =>{
             <button type="submit">Login</button>
             
           </div>
-          <div><h3><a href="#">Click </a> to create new account</h3></div>
+          <div className="Signup-link"><h3><Link to="/SignUp">Click </Link> to create new account</h3></div>
+
+         
         </div>
         </form>
-        </>
+        
+        
     )
 }
 export default Login

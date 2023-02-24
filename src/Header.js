@@ -7,8 +7,11 @@ import Contact from "./Header/Contact";
 import Cart from "./Header/Cart";
 import Login from "./Header/Login"
 import Product from "./Header/Product";
+import SignUp from "./Header/SignUp";
+
 
 const Header = (props) =>{
+    
     return(
         <div className="MainHeader">
             
@@ -21,7 +24,7 @@ const Header = (props) =>{
             <Link to="/Product" className="MainLink">Products</Link>
             <Link to="/Contact" className="MainLink">Contact</Link>
             <Link to="/Cart" className="MainLink">Cart</Link>
-            <Link to="/Login" className="MainLink">welcome Guest</Link>
+            <Link to="/Login" className="MainLink">welcome </Link>
             </div>
           </div>
           <hr/>
@@ -32,7 +35,7 @@ const Header = (props) =>{
             <Route exact path="/Product" component={Product}><Product/></Route>
             <Route exact path="/Cart" component={Cart}><Cart/></Route>
             <Route exact path="/Login" component={Login}><Login/></Route>
-            
+            <Route exact path="/SignUp" component={SignUp}><SignUp/></Route>
           </Switch>
           
           </BrowserRouter>
