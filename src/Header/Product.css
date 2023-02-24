@@ -1,0 +1,22 @@
+.Product-maindiv{
+    display: flex;
+  
+   flex-direction: column;
+    width: 80%;
+    background-color: rgb(104, 104, 172);
+    margin: auto 10%;
+    height:auto;
+}
+.Product-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.img1{
+    margin-top:2%;
+    width: 30%;
+    height:250px;
+    background-color: white;
+}

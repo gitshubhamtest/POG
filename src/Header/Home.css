@@ -1,0 +1,35 @@
+.Home-outerdiv{
+   
+   display: flex;
+  
+   flex-direction: column;
+    width: 80%;
+    background-color: rgb(104, 104, 172);
+    margin: auto 10%;
+    height:auto;
+    
+}
+.Home-title{
+ justify-content: center;
+   align-items: center;
+   background-color: rgb(109, 109, 177);
+}
+h1,h2,h4{
+    background-color: transparent;
+}
+h2{
+    justify-content: left;
+    padding: 10px;
+}
+h4,ul{
+    padding: 10px;
+    font-size: 22px;
+}
+.home-goals,ul,li{
+    background-color: rgb(109, 109, 177);
+}
+li{
+    list-style-type: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}

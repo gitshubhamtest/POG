@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(225, 225, 240);
+}
+.MainHeader{
+    
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+}
+.RouterHeader{
+    display: flex;
+      flex-direction: row;
+}
+.MainLink{
+    color: black;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  text-decoration: none;
+}
+h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 500px;
+    padding-left: 20px;
+    
+}
+.RouterLink{
+    display: flex;
+    justify-items: right;
+}
+.MainLink:active{
+    color:black
+}
